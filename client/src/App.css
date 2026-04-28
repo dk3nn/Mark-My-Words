@@ -1,0 +1,390 @@
+html {
+    background: #4a2c6e;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #4a2c6e;
+    color: #d4bfff;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 40px;
+    background: #3d1f5c;
+    border-radius: 0px;
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ffd700;
+}
+
+h1 {
+    font-size: 48px;
+    color: #ffd700;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ffd700;
+    margin-bottom: 16px;
+    border-left: 4px solid #ffd700;
+    padding-left: 16px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #d4bfff;
+    margin-bottom: 8px;
+}
+
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.dictionary-panel, .thesaurus-panel, .my-dictionary {
+    background: #2d1b4e;
+    border-radius: 0px;
+    padding: 24px;
+    border: 1px solid #ffd700;
+}
+
+.my-dictionary {
+    margin-top: 16px;
+}
+
+button {
+    background: #1a1a1a;
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    padding: 10px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #ffd700;
+    color: #1a1a1a;
+}
+
+input, textarea {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    border: 1px solid #ffd700;
+    border-radius: 0px;
+    background: #2d1b4e;
+    color: #d4bfff;
+    font-size: 14px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #a890c8;
+}
+
+.auth-bar {
+    background: #2d1b4e;
+    padding: 16px;
+    border-radius: 0px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #ffd700;
+}
+
+.auth-form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.auth-error {
+    color: #ffd700;
+    font-size: 14px;
+}
+
+.loading-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4a2c6e;
+}
+
+.loading-container h1 {
+    color: #ffd700;
+}
+
+.search-section {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ffd700;
+    border-radius: 0px;
+    background: #2d1b4e;
+    color: #d4bfff;
+}
+
+.results-panel {
+    min-height: 200px;
+    padding: 16px;
+    background: #2d1b4e;
+    border-radius: 0px;
+    border: 1px solid #ffd700;
+}
+
+.results-panel p {
+    color: #d4bfff;
+}
+
+.save-btn {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.word-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.synonym-word, .antonym-word {
+    background: #1f1140;
+    color: #d4bfff;
+    padding: 5px 12px;
+    border-radius: 0px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ffd700;
+}
+
+.synonym-word:hover {
+    background: #ffd700;
+    color: #1a1a1a;
+}
+
+.folders-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.folders-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.folder-btn {
+    background: #1f1140;
+    color: #d4bfff;
+    padding: 6px 14px;
+    font-size: 14px;
+    border: 1px solid #ffd700;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.folder-btn.active {
+    background: #ffd700;
+    color: #1a1a1a;
+}
+
+.folder-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.delete-folder-btn {
+    background: #1a1a1a;
+    color: #ffd700;
+    padding: 4px 10px;
+    font-size: 12px;
+    border: 1px solid #ffd700;
+    border-radius: 0px;
+}
+
+.saved-words-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.word-card {
+    background: #2d1b4e;
+    padding: 16px;
+    border-radius: 0px;
+    border-left: 4px solid #ffd700;
+    border-bottom: 1px solid #ffd700;
+}
+
+.word-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.word-header h3 {
+    color: #ffd700;
+}
+
+.word-definition {
+    color: #d4bfff;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.user-definition {
+    background: #1f1140;
+    padding: 8px;
+    border-radius: 0px;
+    margin: 8px 0px;
+    font-size: 14px;
+    color: #d4bfff;
+}
+
+.word-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.word-actions button {
+    padding: 4px 12px;
+    font-size: 13px;
+}
+
+.move-menu {
+    margin: 10px 0px;
+    padding: 10px;
+    background: #1f1140;
+    border-radius: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border: 1px solid #ffd700;
+}
+
+.move-menu button {
+    background: #2d1b4e;
+    color: #d4bfff;
+    padding: 5px 12px;
+    font-size: 12px;
+    border: 1px solid #ffd700;
+    border-radius: 0px;
+}
+
+.move-menu button:hover {
+    background: #ffd700;
+    color: #1a1a1a;
+}
+
+.login-page, .auth-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4a2c6e;
+}
+
+.auth-page {
+    position: relative;
+}
+
+.auth-card {
+    background: #2d1b4e;
+    padding: 40px;
+    border-radius: 0px;
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    border: 2px solid #ffd700;
+}
+
+.auth-card h1 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.auth-card p {
+    color: #d4bfff;
+    margin-bottom: 30px;
+}
+
+.auth-card input {
+    background: #1f1140;
+    border: 1px solid #ffd700;
+    color: #d4bfff;
+    border-radius: 0px;
+}
+
+.auth-card input::placeholder {
+    color: #a890c8;
+}
+
+.auth-card button {
+    background: #1a1a1a;
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    border-radius: 0px;
+}
+
+.auth-card button:hover {
+    background: #ffd700;
+    color: #1a1a1a;
+}
+
+.back-home-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #1a1a1a;
+    color: #ffd700;
+    padding: 8px 16px;
+    border-radius: 0px;
+    cursor: pointer;
+    border: 1px solid #ffd700;
+}
+
+.saved-words-list p {
+    color: #d4bfff;
+}
