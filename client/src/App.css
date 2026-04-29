@@ -111,6 +111,7 @@ input::placeholder, textarea::placeholder {
     align-items: center;
     gap: 16px;
     border: 1px solid #ffd700;
+    color: #a890c8;
 }
 
 .auth-form {
