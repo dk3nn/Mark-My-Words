@@ -38,7 +38,7 @@ function Folders({user, refreshSaved, setRefreshSaved, setSelectedFolder}){
     if (!confirm('Delete this folder?')) return
     
         try {
-            const response = await fetch(`http://localhost:3000/folders/${folderId}`, {
+            const response = await fetch(`/folders/${folderId}`, {
                 method: 'DELETE',
                 credentials: 'include'
             })
