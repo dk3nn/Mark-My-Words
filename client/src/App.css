@@ -1,5 +1,5 @@
-html {
-    background: #4a2c6e;
+html, body, #root, .App, *:fullscreen, *:-webkit-full-screen {
+    background-color: #4a2c6e !important;
 }
 
 * {
