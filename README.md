@@ -1,13 +1,14 @@
 # Mark-My-Words
 
-Demo video
+# Demo video
+(uncg members only)
 https://uncg-my.sharepoint.com/:v:/g/personal/djkennaley_uncg_edu/IQD8_h6nX3dnTKwVc28xyiLLAd3dOXoHIKPc0VCkZBjYJCc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qZH96w
 
 # Setup instructions
 click link below
 you can begin using right away, for the ability to save words and create your own definitions you must sign up and register an account.
 Once an account is made you can login and search words and then save them to your default folder.
-You can create new folders and label them, you can then move any words you hvae saved into another folder you have created and will be saved there. 
+You can create new folders and label them, you can then move any words you have saved into another folder you have created and will be saved there. 
 For any word you can also create a new definition that will be shown alongside the dictionary definition.
 
 # Deployed URL
