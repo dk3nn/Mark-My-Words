@@ -63,7 +63,7 @@ function SavedWords({user, refreshSaved, currentWord, currentDefinition, current
 
     const editDefinition = async (id, newDefinition) => {
         try {
-            const response = await fetch(`http://localhost:3000/saved/${id}/definition`, {
+            const response = await fetch(`/saved/${id}/definition`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ user_definition: newDefinition }),
