@@ -1,6 +1,8 @@
 # Mark-My-Words
 A Full-Stack dictioinary/thesaurus web application, which gives you the ability to save words and organize them into custom folders, as well as create your own definition for any word you save.
 
+Stack made up of: React, Node.js, Express, PostgreSQL, Railway
+
 # Setup instructions
 Click link below
 
