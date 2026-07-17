@@ -2,9 +2,9 @@
 A Full-Stack dictioinary/thesaurus web application, which gives you the ability to save words and organize them into custom folders, as well as create your own definition for any word you save.
 
 # Setup instructions
-click link below
+Click link below
 
-you can begin using right away, for the ability to save words and create your own definitions you must sign up and register an account.
+You can begin using right away, for the ability to save words and create your own definitions you must sign up and register an account.
 
 Once an account is made you can login and search words and then save them to your default folder.
 
